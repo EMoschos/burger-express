@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="../public/assets/css/burger_style.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/assets/js/burgerFE.js"></script>
+    <title>Burger Express</title>
+</head>
+
+<body>
+    <div class="container pt-4">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h1>BURGER EXPRESS</h1>
+                <img src="../public/assets/img/burger.png" alt="Burger" height="300" width="350">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <p>Enter a burger and submit it to the list of delicious treats to eat</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Burger Name" aria-label="Burger Name"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="button-addon2">Add Burger</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <p>Get in my Belly</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Yum Burger<button class="btn btn-warning" type="button" >Devour</button></li>
+                  </ul>
+            </div>
+            <div class="col-4">
+                <p>Yumo!!!</p>
+                <ul class="list-group">
+                    <li class="list-group-item bg-secondary text-white" aria-disabled="true">Eaten Burger</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

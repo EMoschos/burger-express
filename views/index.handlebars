@@ -1,0 +1,42 @@
+<div class="container pt-4">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <h1>BURGER EXPRESS</h1>
+            <img src="../public/assets/img/burger.png" alt="Burger" height="300" width="350">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <p>Enter a burger and submit it to the list of delicious treats to eat</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Burger Name" aria-label="Burger Name"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="button" id="button-addon2">Add Burger</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <p>Get in my Belly</p>
+            <ul class="list-group">
+                {{#each burger}}
+                 {{#if devour}}
+                  {{> burger/burgerlist}}
+                 {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-4">
+            <p>Yumo!!!</p>
+            <ul class="list-group">
+                {{#each burger}}
+                 {{#unless devour}}
+                  {{> burger/burgerEat}}
+                 {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
