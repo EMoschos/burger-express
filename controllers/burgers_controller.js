@@ -11,5 +11,13 @@ const burger = require("../models/burger.js");
 const router = express.Router();
 
 router.get("/", function(req, res){
-   //
-})
+   burger.selectAll(function(result){
+      let hbBurger = {
+         burgers: result
+      };
+      console.log(hbBurger);
+      res.render("index", hbBurger);
+   });
+});
+
+module.exports = router;
