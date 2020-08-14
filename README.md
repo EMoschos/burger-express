@@ -21,7 +21,7 @@
   
   The app is accessed through heruko, however the app can also be installed locally.  pre-requisites include mySQL workbench to house the database and node.js installed on the local machine.  The code in SQL files will need to be transefered to mySQL and the database created.  The connection will also need to be updated to use on local machine. 
   ```
-Click [Here](https://github.com/EMoschos/burger-express) to acces Github Repo
+  Click [Here](https://github.com/EMoschos/burger-express) to acces Github Repo
 
   ## Usage 
 
